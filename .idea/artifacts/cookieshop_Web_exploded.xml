@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cookieshop:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/cookieshop_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="cookieshop/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cookieshop" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
