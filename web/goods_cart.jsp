@@ -32,12 +32,9 @@
 	<!--cart-items-->
 	<div class="cart-items">
 		<div class="container">
-		
-		
-		
 			<h2>我的购物车</h2>
 
-
+			<!-- 遍历购物车中的商品 -->
 			<c:forEach items="${order.itemMap }" var="item">
 				<div class="cart-header col-md-6">
 					<div class="cart-sec simpleCart_shelfItem">
@@ -50,6 +47,7 @@
 							<h3><a href="/goods_detail?id=${item.key}">${item.value.goods.name}</a></h3>
 							<h3><span>单价: ¥ ${item.value.price}</span></h3>
 							<h3><span>数量: ${item.value.amount}</span></h3>
+							<!-- 增加、减少和删除商品的按钮 -->
 							<a class="btn btn-info" href="javascript:buy(${item.key});">增加</a>
 							<a class="btn btn-warning" href="javascript:lessen(${item.key});">减少</a>
 							<a class="btn btn-danger" href="javascript:deletes(${item.key});">删除</a>
@@ -58,20 +56,18 @@
 					</div>
 				</div>
 			</c:forEach>
-			
+
+			<!-- 订单总额和提交订单按钮 -->
 			<div class="cart-header col-md-12">
 				<hr>
 				<h3>订单总金额: ¥ ${order.total}</h3>
 				<a class="btn btn-success btn-lg" style="margin-left:74%" href="${pageContext.request.contextPath}/order_submit">提交订单</a>
 			</div>
-			
-			
-			
 		</div>
 	</div>
-	<!--//cart-items-->	
-	
-	
+	<!--//cart-items-->
+
+
 
 
 

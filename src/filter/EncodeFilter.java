@@ -29,3 +29,7 @@ public class EncodeFilter implements Filter {
     }
 
 }
+
+//这个 EncodeFilter 是一个用于字符编码的过滤器
+//它会对每一个进入应用的请求进行拦截并设置请求的字符编码为 UTF-8
+//确保处理请求时不会出现编码问题

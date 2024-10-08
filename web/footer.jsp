@@ -14,10 +14,11 @@
         </div>
         
         <%
+           // 打印当前时间，用于日志或调试目的
            System.out.println("footer.jsp == " + LocalDateTime.now());
            System.out.println(" ");
          %>
-        
+
     </div>
 </div>
 <!--//footer-->
