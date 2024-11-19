@@ -11,7 +11,7 @@ import java.io.IOException;
 
 @WebServlet(name = "admin_order_delete",urlPatterns = "/admin/order_delete")
 public class AdminOrderDeleteServlet extends HttpServlet {
-    private OrderService oService = new OrderService();
+    private final OrderService oService = new OrderService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));

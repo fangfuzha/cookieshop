@@ -14,7 +14,7 @@ import java.lang.reflect.InvocationTargetException;
 
 @WebServlet(name = "admin_user_add",urlPatterns = "/admin/user_add")
 public class AdminUserAddServlet extends HttpServlet {
-    private UserService uService = new UserService();
+    private final UserService uService = new UserService();
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */

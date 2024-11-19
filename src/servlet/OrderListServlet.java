@@ -14,7 +14,7 @@ import java.util.List;
 
 @WebServlet(name = "order_list", urlPatterns = "/order_list")
 public class OrderListServlet extends HttpServlet {
-    private OrderService oService = new OrderService();
+    private final OrderService oService = new OrderService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

@@ -28,7 +28,7 @@ public class AdminFilter implements Filter {
     	System.out.println("=== AdminFilter = u = "  + u);
      	System.out.println(" ");
         
-        if(u==null || u.isIsadmin()==false) {
+        if(u==null || !u.isIsadmin()) {
             requestp.sendRedirect("../index.jsp");
         }else {
             // pass the request along the filter chain

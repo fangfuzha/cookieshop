@@ -11,7 +11,7 @@ import java.io.IOException;
 
 @WebServlet(name = "admin_user_delete",urlPatterns = "/admin/user_delete")
 public class AdminUserDeleteServlet extends HttpServlet {
-    private UserService uService = new UserService();
+    private final UserService uService = new UserService();
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */

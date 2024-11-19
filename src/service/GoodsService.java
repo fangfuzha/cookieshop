@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 public class GoodsService {
-    private GoodsDao gDao=new GoodsDao();
+    private final GoodsDao gDao=new GoodsDao();
     public List<Map<String,Object>> getGoodsList(int recommendType) {
         List<Map<String,Object>> list=null;
         try {

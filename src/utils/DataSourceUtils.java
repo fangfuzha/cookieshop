@@ -7,7 +7,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class DataSourceUtils {
-    private static DataSource ds=new ComboPooledDataSource();
+    private static final DataSource ds=new ComboPooledDataSource();
 
     public static DataSource getDataSource()
     {

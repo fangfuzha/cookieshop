@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @WebServlet(name = "goodrecommendList",urlPatterns = "/goodsrecommend_list")
 public class GoodRecommendListServlet extends HttpServlet {
-    private GoodsService gService = new GoodsService();
+    private final GoodsService gService = new GoodsService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int type = Integer.parseInt(request.getParameter("type") ) ;

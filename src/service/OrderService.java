@@ -8,7 +8,7 @@ import java.sql.*;
 import java.util.List;
 
 public class OrderService {
-    private OrderDao oDao = new OrderDao();
+    private final OrderDao oDao = new OrderDao();
     public void addOrder(Order order) {
         Connection con = null;
         try {

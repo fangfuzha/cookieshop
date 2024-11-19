@@ -28,21 +28,13 @@ public class UserDao {
         QueryRunner r = new QueryRunner(DataSourceUtils.getDataSource());
         String sql = "select * from user where username = ?";
         User u = r.query(sql, new BeanHandler<User>(User.class),username);
-        if(u==null) {
-            return false;
-        }else {
-            return true;
-        }
+        return u != null;
     }
     public boolean isEmailExist(String email) throws SQLException {
         QueryRunner r = new QueryRunner(DataSourceUtils.getDataSource());
         String sql = "select * from user where email = ?";
         User u = r.query(sql, new BeanHandler<User>(User.class),email);
-        if(u==null) {
-            return false;
-        }else {
-            return true;
-        }
+        return u != null;
     }
     public User selectByUsernamePassword(String username,String password) throws SQLException {
         QueryRunner r = new QueryRunner(DataSourceUtils.getDataSource());

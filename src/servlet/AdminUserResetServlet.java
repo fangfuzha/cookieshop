@@ -14,7 +14,7 @@ import java.lang.reflect.InvocationTargetException;
 
 @WebServlet(name = "admin_user_reset",urlPatterns = "/admin/user_reset")
 public class AdminUserResetServlet extends HttpServlet {
-    private UserService uService = new UserService();
+    private final UserService uService = new UserService();
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */

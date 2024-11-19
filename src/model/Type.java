@@ -2,6 +2,7 @@ package model;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 public class Type {
 	private int id;
@@ -26,13 +27,8 @@ public class Type {
 	}
 	public void setName(String name) {
 		this.name = name;
-		try {
-			this.encodeName = URLEncoder.encode(name, "utf-8");
-		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+        this.encodeName = URLEncoder.encode(name, StandardCharsets.UTF_8);
+    }
 	public Type(int id, String name) {
 		super();
 		this.id = id;

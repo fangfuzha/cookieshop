@@ -55,7 +55,7 @@
                             <div class="item active">
                                 <h2 class="hdng"><a href="${pageContext.request.contextPath}/goods_detail?id=${g.id}">${g.name}</a><span></span></h2>
                                 <p>今日精选推荐</p>
-                                <a class="banner_a" href="javascript:;" onclick="buy(${g.id})">立刻购买</a>
+                                <a class="banner_a" href="javascript:" onclick="buy(${g.id})">立刻购买</a>
                                 <div class="banner-text">
                                     <a href="${pageContext.request.contextPath}/goods_detail?id=${g.id}">
                                         <img src="${pageContext.request.contextPath}/${g.cover}" alt="${g.name}" width="350" height="350">
@@ -67,7 +67,7 @@
                             <div class="item">
                                 <h2 class="hdng"><a href="${pageContext.request.contextPath}/goods_detail?id=${g.id}">${g.name}</a><span></span></h2>
                                 <p>今日精选推荐</p>
-                                <a class="banner_a" href="javascript:;" onclick="buy(${g.id})">立刻购买</a>
+                                <a class="banner_a" href="javascript:" onclick="buy(${g.id})">立刻购买</a>
                                 <div class="banner-text">
                                     <a href="${pageContext.request.contextPath }/goods_detail?id=${g.id}">
                                         <img src="${pageContext.request.contextPath}/${g.cover}" alt="${g.name}" width="350" height="350">
@@ -113,14 +113,14 @@
             <c:forEach items="${hotList}" var="g">
                 <div class="col-md-4 gallery-grid glry-two">
                     <a href="${pageContext.request.contextPath}/goods_detail?id=${g.id}">
-                        <img src="${pageContext.request.contextPath}/${g.cover}" class="img-responsive" alt="${g.name}" width="350" height="350"/>
+                        <img src="${pageContext.request.contextPath}${g.cover}" class="img-responsive" alt="${g.name}" width="350" height="350"/>
                     </a>
                     <div class="gallery-info galrr-info-two">
                         <p>
                             <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                             <a href="${pageContext.request.contextPath}/goods_detail?id=${g.id}">查看详情</a>
                         </p>
-                        <a class="shop" href="javascript:;" onclick="buy(${g.id})">立刻购买</a>
+                        <a class="shop" href="javascript:" onclick="buy(${g.id})">立刻购买</a>
                         <div class="clearfix"></div>
                     </div>
                     <div class="galy-info">
@@ -151,7 +151,7 @@
                             <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                             <a href="${pageContext.request.contextPath}/goods_detail?id=${g.id}">查看详情</a>
                         </p>
-                        <a class="shop" href="javascript:;" onclick="buy(${g.id})">立刻购买</a>
+                        <a class="shop" href="javascript:" onclick="buy(${g.id})">立刻购买</a>
                         <div class="clearfix"></div>
                     </div>
                     <div class="galy-info">

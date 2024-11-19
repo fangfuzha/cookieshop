@@ -13,7 +13,7 @@ import java.io.IOException;
 @WebServlet(name = "user_changepwd",urlPatterns = "/user_changepwd")
 public class UserChangePwd extends HttpServlet {
 
-    private UserService uService = new UserService();
+    private final UserService uService = new UserService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String password = request.getParameter("password");

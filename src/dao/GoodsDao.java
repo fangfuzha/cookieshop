@@ -98,11 +98,7 @@ public class GoodsDao {
         QueryRunner r = new QueryRunner(DataSourceUtils.getDataSource());
         String sql = "select * from recommend where type=? and goods_id=?";
         Recommend recommend = r.query(sql, new BeanHandler<Recommend>(Recommend.class),type,g.getId());
-        if(recommend==null) {
-            return false;
-        }else {
-            return true;
-        }
+        return recommend != null;
     }
     public void addRecommend(int id,int type) throws SQLException {
         QueryRunner r = new QueryRunner(DataSourceUtils.getDataSource());

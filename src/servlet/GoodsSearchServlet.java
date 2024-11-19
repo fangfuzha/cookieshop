@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 @WebServlet(name = "goods_search",urlPatterns = "/goods_search")
 public class GoodsSearchServlet extends HttpServlet {
@@ -16,7 +17,7 @@ public class GoodsSearchServlet extends HttpServlet {
 
     }
 
-    private GoodsService gService = new GoodsService();
+    private final GoodsService gService = new GoodsService();
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String keyword = request.getParameter("keyword");
         int pageNumber = 1;
@@ -47,7 +48,7 @@ public class GoodsSearchServlet extends HttpServlet {
             }
         }
         request.setAttribute("p", p);
-        request.setAttribute("keyword", URLEncoder.encode(keyword,"utf-8"));
+        request.setAttribute("keyword", URLEncoder.encode(keyword, StandardCharsets.UTF_8));
         request.getRequestDispatcher("/goods_search.jsp").forward(request, response);
     }
 

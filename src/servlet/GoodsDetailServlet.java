@@ -13,7 +13,7 @@ import java.io.IOException;
 @WebServlet(name = "goods_detail",urlPatterns = "/goods_detail")
 public class GoodsDetailServlet extends HttpServlet {
 
-    private GoodsService gService = new GoodsService();
+    private final GoodsService gService = new GoodsService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

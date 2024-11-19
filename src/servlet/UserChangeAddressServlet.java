@@ -15,7 +15,7 @@ import java.lang.reflect.InvocationTargetException;
 @WebServlet(name = "user_changeaddress",urlPatterns = "/user_changeaddress")
 public class UserChangeAddressServlet extends HttpServlet {
 
-    private UserService uService = new UserService();
+    private final UserService uService = new UserService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

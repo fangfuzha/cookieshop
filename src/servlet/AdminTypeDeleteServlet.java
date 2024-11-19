@@ -11,7 +11,7 @@ import java.io.IOException;
 
 @WebServlet(name = "admin_type_delete",urlPatterns = "/admin/type_delete")
 public class AdminTypeDeleteServlet extends HttpServlet {
-    private TypeService tService = new TypeService();
+    private final TypeService tService = new TypeService();
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */

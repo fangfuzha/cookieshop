@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 
 @WebServlet(name = "order_confirm",urlPatterns = "/order_confirm")  
 public class OrderConfirmServlet extends HttpServlet {
-    private OrderService oService = new OrderService();
+    private final OrderService oService = new OrderService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Order o = (Order) request.getSession().getAttribute("order");
         try {

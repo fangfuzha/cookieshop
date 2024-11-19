@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @WebServlet(name = "admin_goods_list",urlPatterns = "/admin/goods_list")
 public class AdminGoodsListServlet extends HttpServlet {
-    private GoodsService gService = new GoodsService();
+    private final GoodsService gService = new GoodsService();
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */

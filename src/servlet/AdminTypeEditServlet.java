@@ -13,7 +13,7 @@ import java.io.IOException;
 
 @WebServlet(name = "admin_type_edit",urlPatterns = "/admin/type_edit")
 public class AdminTypeEditServlet extends HttpServlet {
-    private TypeService tService = new TypeService();
+    private final TypeService tService = new TypeService();
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */

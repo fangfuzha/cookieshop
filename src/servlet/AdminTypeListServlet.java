@@ -14,7 +14,7 @@ import java.util.List;
 
 @WebServlet(name = "admi_type_list",urlPatterns = "/admin/type_list")
 public class AdminTypeListServlet extends HttpServlet {
-    private TypeService tService = new TypeService();
+    private final TypeService tService = new TypeService();
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */

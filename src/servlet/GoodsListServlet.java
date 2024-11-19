@@ -16,8 +16,8 @@ import java.util.List;
 
 @WebServlet(name = "goods_List",urlPatterns = "/goods_list")
 public class GoodsListServlet extends HttpServlet {
-    private GoodsService gService=new GoodsService();
-    private TypeService tService=new TypeService();
+    private final GoodsService gService=new GoodsService();
+    private final TypeService tService=new TypeService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

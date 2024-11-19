@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @WebServlet(name = "admin_user_list",urlPatterns = "/admin/user_list")
 public class AdminUserListServlet extends HttpServlet {
-    private UserService uService = new UserService();
+    private final UserService uService = new UserService();
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */

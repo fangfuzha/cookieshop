@@ -17,7 +17,7 @@ public class IndexServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
-    private GoodsService gService=new GoodsService();
+    private final GoodsService gService=new GoodsService();
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	System.out.println("=== IndexServlet == before"  + LocalDateTime.now());
     	System.out.println("  ");

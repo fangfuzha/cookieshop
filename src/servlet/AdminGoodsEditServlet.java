@@ -20,7 +20,7 @@ import java.util.List;
 
 @WebServlet(name = "admin_goods_edit",urlPatterns = "/admin/goods_edit")
 public class AdminGoodsEditServlet extends HttpServlet {
-    private GoodsService gService = new GoodsService();
+    private final GoodsService gService = new GoodsService();
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */

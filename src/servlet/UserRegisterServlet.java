@@ -16,7 +16,7 @@ import java.lang.reflect.InvocationTargetException;
 
 @WebServlet(name = "user_register",urlPatterns = "/user_rigister")
 public class UserRegisterServlet extends HttpServlet {
-    private UserService uService = new UserService();
+    private final UserService uService = new UserService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = new User();
         try {

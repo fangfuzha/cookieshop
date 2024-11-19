@@ -76,7 +76,7 @@
         </nav>
         <div class="header-info">
             <div class="header-right search-box">
-                <a href="javascript:;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                <a href="javascript:"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
                 <div class="search">
                     <form class="navbar-form" action="${pageContext.request.contextPath }/goods_search">
                         <input type="text" class="form-control" name="keyword">

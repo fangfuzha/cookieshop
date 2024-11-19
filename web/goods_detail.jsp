@@ -71,7 +71,7 @@
 						<div class="clearfix"></div>
 					</div>
 					<div class="btn_form">
-						<a href="javascript:;" class="add-cart item_add" onclick="buy(${g.id})">加入购物车</a>
+						<a href="javascript:" class="add-cart item_add" onclick="buy(${g.id})">加入购物车</a>
 					</div>
 				</div>
 				<div class="col-md-4 single-grid1">
