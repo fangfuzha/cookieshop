@@ -97,7 +97,7 @@
 
 <br>
 	<jsp:include page="/page.jsp">
-		<jsp:param value="/admin/order_list" name="url"/>
+		<jsp:param value="admin/order_list" name="url"/>
 		<jsp:param value="&status=${status}" name="param"/>
 	</jsp:include>
 <br>

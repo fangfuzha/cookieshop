@@ -78,7 +78,7 @@
             <div class="header-right search-box">
                 <a href="javascript:;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
                 <div class="search">
-                    <form class="navbar-form" action="<c:url value="/goods_search"/>">
+                    <form class="navbar-form" action="${pageContext.request.contextPath }/goods_search">
                         <input type="text" class="form-control" name="keyword">
                         <button type="submit" class="btn btn-default <c:if test="${param.flag==7 }">active</c:if>" aria-label="Left Align">搜索</button>
                     </form>

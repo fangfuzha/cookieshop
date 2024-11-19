@@ -41,4 +41,3 @@ public class AdminFilter implements Filter {
     }
 
 }
-//这个 AdminFilter 过滤器用于限制访问 /admin/* 路径下的资源，确保只有具有管理员权限的用户可以访问该路径

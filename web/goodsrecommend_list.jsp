@@ -73,7 +73,7 @@
         </div>
 
         <jsp:include page="page.jsp">
-            <jsp:param name="url" value="${pageContext.request.contextPath}/goodsrecommend_list"></jsp:param>
+            <jsp:param name="url" value="goodsrecommend_list"></jsp:param>
             <jsp:param name="param" value="&type=${t}"></jsp:param>
         </jsp:include>
         </div>

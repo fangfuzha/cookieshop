@@ -16,7 +16,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
-
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/simpleCart.min.js"></script>
@@ -66,7 +65,7 @@
         </div>
 
         <jsp:include page="page.jsp">
-            <jsp:param name="url" value="${pageContext.request.contextPath}//goods_list"></jsp:param>
+            <jsp:param name="url" value="/goods_list"></jsp:param>
             <jsp:param name="param" value="&typeid=${id}"></jsp:param>
         </jsp:include>
         </div>

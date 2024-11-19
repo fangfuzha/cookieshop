@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 
 @WebServlet(name = "user_login",urlPatterns = "/user_login")
 public class UserLoginServlet extends HttpServlet {
-    private final UserService uService = new UserService();
+    private UserService uService = new UserService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	System.out.println("=== UserLoginServelt 1111 == " + LocalDateTime.now());
     	System.out.println("  ");

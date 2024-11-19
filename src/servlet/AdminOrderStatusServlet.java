@@ -17,6 +17,9 @@ public class AdminOrderStatusServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         int status = Integer.parseInt(request.getParameter("status"));
         oService.updateStatus(id, status);
-        response.sendRedirect("/admin/order_list?status="+status);
+        
+        
+        // response.sendRedirect("/admin/order_list?status="+status);
+        request.getRequestDispatcher("/admin/order_list?status="+status).forward(request, response);
     }
 }
