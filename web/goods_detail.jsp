@@ -47,13 +47,13 @@
 						
 						<ul class="slides">
 							<li data-thumb="${pageContext.request.contextPath}/${g.cover}">
-								<div class="thumb-image"> <img src="${pageContext.request.contextPath}/${g.cover}" data-imagezoom="true" class="img-responsive"> </div>
+								<div class="thumb-image"> <img src="${pageContext.request.contextPath}${g.cover}" data-imagezoom="true" class="img-responsive"> </div>
 							</li>
 							<li data-thumb="${pageContext.request.contextPath}/${g.image1}">
-								 <div class="thumb-image"> <img src="${pageContext.request.contextPath}/${g.image1}" data-imagezoom="true" class="img-responsive"> </div>
+								 <div class="thumb-image"> <img src="${pageContext.request.contextPath}${g.image1}" data-imagezoom="true" class="img-responsive"> </div>
 							</li>
 							<li data-thumb="${pageContext.request.contextPath}/${g.image2}">
-							   <div class="thumb-image"> <img src="${pageContext.request.contextPath}/${g.image2}" data-imagezoom="true" class="img-responsive"> </div>
+							   <div class="thumb-image"> <img src="${pageContext.request.contextPath}${g.image2}" data-imagezoom="true" class="img-responsive"> </div>
 							</li> 
 						</ul>
 					</div>

@@ -43,7 +43,7 @@
 					<div class="cart-sec simpleCart_shelfItem">
 						<div class="cart-item cyc">
 							<a href="/goods_detail?id=${item.key}">
-								<img src="${pageContext.request.contextPath}/${item.value.goods.cover}" class="img-responsive">
+								<img src="${pageContext.request.contextPath}${item.value.goods.cover}" class="img-responsive">
 							</a>
 						</div>
 						<div class="cart-item-info">

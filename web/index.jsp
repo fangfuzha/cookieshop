@@ -58,7 +58,7 @@
                                 <a class="banner_a" href="javascript:" onclick="buy(${g.id})">立刻购买</a>
                                 <div class="banner-text">
                                     <a href="${pageContext.request.contextPath}/goods_detail?id=${g.id}">
-                                        <img src="${pageContext.request.contextPath}/${g.cover}" alt="${g.name}" width="350" height="350">
+                                        <img src="${pageContext.request.contextPath}${g.cover}" alt="${g.name}" width="350" height="350">
                                     </a>
                                 </div>
                             </div>
@@ -70,7 +70,7 @@
                                 <a class="banner_a" href="javascript:" onclick="buy(${g.id})">立刻购买</a>
                                 <div class="banner-text">
                                     <a href="${pageContext.request.contextPath }/goods_detail?id=${g.id}">
-                                        <img src="${pageContext.request.contextPath}/${g.cover}" alt="${g.name}" width="350" height="350">
+                                        <img src="${pageContext.request.contextPath}${g.cover}" alt="${g.name}" width="350" height="350">
                                     </a>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
             <c:forEach items="${newList}" var="g">
                 <div class="col-md-3 gallery-grid ">
                     <a href="${pageContext.request.contextPath}/goods_detail?id=${g.id}">
-                        <img src="${pageContext.request.contextPath }/${g.cover}" class="img-responsive" alt="${g.name}"/>
+                        <img src="${pageContext.request.contextPath}${g.cover}" class="img-responsive" alt="${g.name}"/>
                     </a>
                     <div class="gallery-info">
                         <p>
